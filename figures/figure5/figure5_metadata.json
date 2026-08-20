@@ -1,0 +1,29 @@
+{
+  "classification": "publication-freeze output from frozen canonical predictions",
+  "input_filename": "test_predictions.parquet",
+  "input_sha256": "142d07b117619de2e00740d7e36264e8b70233cce959f69a9495f7a23fe17da3",
+  "feature_set": 8,
+  "models": [
+    "xgboost",
+    "rf",
+    "mlp",
+    "hybrid"
+  ],
+  "seeds": [
+    104729,
+    130363,
+    155921,
+    181081,
+    206369,
+    231701,
+    257053,
+    282427,
+    307759,
+    333019
+  ],
+  "grid_points": 1001,
+  "aggregation": "per-seed ROC; TPR linearly interpolated on common FPR grid; mean and sample SD across matched seeds",
+  "variability_display": "shaded band is mean TPR plus/minus one sample SD, constrained to [0,1] for display only",
+  "ci": "two-sided t interval for mean AUC; displayed endpoints constrained to [0,1]",
+  "run4_excluded": true
+}

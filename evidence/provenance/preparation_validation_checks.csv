@@ -1,0 +1,32 @@
+check,status,detail
+preparation_pending_validation,pass,status='prepared_pending_independent_validation'
+validated_inventory,pass,status='valid'
+artifact_hash_prepared,pass,expected=56c90ab907c76567b7f26cf761ad45695c0b8e3ebe732ed43b04f5f8be74ca7b actual=56c90ab907c76567b7f26cf761ad45695c0b8e3ebe732ed43b04f5f8be74ca7b
+artifact_hash_selected,pass,expected=902c22d120dff65c5529fd0e123622a6122531d5ce5589021e987ee1b52b3575 actual=902c22d120dff65c5529fd0e123622a6122531d5ce5589021e987ee1b52b3575
+artifact_hash_splits,pass,expected=0ecb7978ab509151cc1f2b4e2fbabe6b2ef98450597be8f4999d82ab92d383b5 actual=0ecb7978ab509151cc1f2b4e2fbabe6b2ef98450597be8f4999d82ab92d383b5
+artifact_hash_cleaning,pass,expected=98fb1f2a2eb0676da26628aa3d3160b87b9ad335b4c0a9e92f2f886d7a007cfa actual=98fb1f2a2eb0676da26628aa3d3160b87b9ad335b4c0a9e92f2f886d7a007cfa
+artifact_hash_dedup,pass,expected=637eb6673abfcab6f623ed729e25ea8d8a28476f5f73c0b1e5ac788d9323e953 actual=637eb6673abfcab6f623ed729e25ea8d8a28476f5f73c0b1e5ac788d9323e953
+artifact_hash_allocation,pass,expected=2bd116a03588f25c7998ab8a496e0201f68cdc395014f34e00905c4a13d7d2f8 actual=2bd116a03588f25c7998ab8a496e0201f68cdc395014f34e00905c4a13d7d2f8
+artifact_hash_composition,pass,expected=4e79fcc18af0fa016df5efc03fad5afeb7779dc51fcfd2071de03626795272de actual=4e79fcc18af0fa016df5efc03fad5afeb7779dc51fcfd2071de03626795272de
+artifact_hash_leakage,pass,expected=9e4218c20052793fb7ca733d0fbc1ce9f726059dbdcba4c03969d75a4189ab8d actual=9e4218c20052793fb7ca733d0fbc1ce9f726059dbdcba4c03969d75a4189ab8d
+raw_source_files_present_and_sizes_unchanged,pass,checked=18 missing=[]
+preparation_database_present,pass,prepared\cicddos2019-max-benign-run5-inet454\preparation.duckdb
+prepared_balanced_unique,pass,"observed=(216762, 108381, 108381, 216762, 216762, 216762) expected=(216762, 108381, 108381, 216762, 216762, 216762)"
+feature8_all_finite,pass,"features=['Total Fwd Packets', 'Total Backward Packets', 'Flow Bytes/s', 'Flow Packets/s', 'Flow Duration', 'Total Length of Fwd Packets', 'Total Length of Bwd Packets', 'Fwd Packet Length Mean']"
+feature8_and_provenance_columns_present,pass,"columns=['Flow Bytes/s', 'Flow Duration', 'Flow Packets/s', 'Fwd Packet Length Mean', 'Label', 'Total Backward Packets', 'Total Fwd Packets', 'Total Length of Bwd Packets', 'Total Length of Fwd Packets', 'attack_type', 'day', 'row_hash', 'sample_id', 'sampling_rank', 'sampling_seed', 'selection_reason', 'source_file', 'source_file_sha256', 'source_group', 'source_label', 'source_row_id', 'source_row_number']"
+prepared_selected_manifests_match,pass,prepared_minus_selected=0 reverse=0
+all_and_only_unique_clean_benign_retained,pass,missing=0 invalid_selected=0
+ddos_without_replacement_within_allocation,pass,invalid_selected_attack_rows=0
+ddos_stratum_allocations_exact,pass,mismatched_strata=0
+no_hash_collision_or_exact_duplicate_selected,pass,unique_hash_collisions=0 nonrepresentatives=0
+selected_source_provenance_matches_inventory,pass,selected_files=18 mismatches=[]
+cleaning_reconciles_raw_inventory,pass,raw=70427637 inventory=70427637
+dedup_reconciles_cleaning,pass,dedup_clean=68256887 cleaning_clean=68256887
+allocation_sums_to_N_and_is_within_capacity,pass,allocated=108381 N=108381
+exact_expected_split_seeds,pass,"observed=[104729, 130363, 155921, 181081, 206369, 231701, 257053, 282427, 307759, 333019] expected=[104729, 130363, 155921, 181081, 206369, 231701, 257053, 282427, 307759, 333019]"
+every_seed_contains_exact_same_selected_rows,pass,rows=2167620 expected=2167620
+split_sample_set_equals_selection,pass,set_differences=0
+class_preserving_group_only_splits,pass,invalid_partitions=0 class_failures=0
+zero_row_id_hash_and_source_group_overlap,pass,row_hash=0 sample_id=0 source_group=0
+split_ids_recomputed,pass,failures=0
+group_composition_reconciles_split_manifest,pass,csv_rows=420 recomputed_rows=420

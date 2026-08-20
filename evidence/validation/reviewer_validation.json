@@ -1,0 +1,14 @@
+{
+  "status": "valid",
+  "checks_passed": 37,
+  "checks_failed": 0,
+  "failures": [],
+  "input_hashes": {
+    "reports\\statistics\\max-benign-run5-inet454-ci-bounded-20260819T150411\\metrics_mean_sd_95ci.csv": "9d72ec067a40db67cd8d8c4d92c3704e1468899d0e3d651eca0a75ef5e2ff24c",
+    "reports\\statistics\\max-benign-run5-inet454-ci-bounded-20260819T150411\\paired_feature_and_model_comparisons.csv": "b15afa30d7c5cdfc7ac54c3451d1fab296c02903166ed29b6f34f01e143cf236",
+    "reports\\statistics\\max-benign-run5-inet454-ci-bounded-20260819T150411\\paired_mcnemar.csv": "07bf6cea82580ee90ec675319d5cbdc62e342b123f5cd7067244a4bb1f50ac3f",
+    "reports\\final-tables-20260819T150411.md": "c52d050e7ba2cf1fabd5ee17d84df2ad4594d563e7c22e7697e8d6bfa271314e",
+    "results\\environment\\python-version-20260819T144816.txt": "18cfab71d754ead7155fdec04deb16b88b572772a120307f2b4f17bea10c7aaa",
+    "results\\environment\\pip-freeze-20260819T144816.txt": "11453ed539a4a2a2193df36c84a95cfbf88b91915e1c601519c6895b77180d13"
+  }
+}

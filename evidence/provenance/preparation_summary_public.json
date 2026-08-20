@@ -1,0 +1,80 @@
+{
+  "dataset": "CICDDoS2019",
+  "method": "maximum clean valid exact-record-unique BENIGN with matched DDoS",
+  "N": 108381,
+  "class_counts": {
+    "raw": {
+      "BENIGN": 113828,
+      "DDoS": 70313809
+    },
+    "clean_valid": {
+      "BENIGN": 112731,
+      "DDoS": 68144156
+    },
+    "invalid_removed": {
+      "BENIGN": 1097,
+      "DDoS": 2169653
+    },
+    "exact_duplicates_removed": {
+      "BENIGN": 4350,
+      "DDoS": 440457
+    },
+    "clean_unique": {
+      "BENIGN": 108381,
+      "DDoS": 67703699
+    },
+    "selected": {
+      "BENIGN": 108381,
+      "DDoS": 108381
+    }
+  },
+  "normalization": "All 88 official CSV headers and field strings are stripped of surrounding whitespace; empty values normalize to the empty string; internal text and the common official column order are preserved.",
+  "exact_deduplication": "DuckDB equality partition over every one of the 88 normalized source fields. Metadata is excluded from identity. The deterministic representative is the lowest day/source-file/original-row tuple. SHA-256 of the canonical JSON value list is recorded only after exact equality grouping; hash collisions are fatal.",
+  "balancing": "Retain every clean unique BENIGN row. Allocate exactly N DDoS rows across day/source-file/source-attack strata by proportional Hamilton largest remainder, then rank by SHA-256(row_hash, sampling seed) without replacement.",
+  "sampling_seed": 104729,
+  "oversampling_or_duplication_used": false,
+  "split_method": "Source-file group holdout only. For each seed, 4,000 deterministic GroupShuffleSplit candidates are searched and the class-preserving candidate closest to 20% overall/BENIGN/DDoS counts is selected. No record fallback.",
+  "split_seeds": [
+    104729,
+    130363,
+    155921,
+    181081,
+    206369,
+    231701,
+    257053,
+    282427,
+    307759,
+    333019
+  ],
+  "test_fraction_target": 0.2,
+  "matched_experiment_invariant": "The same prepared sample_id rows and one precomputed partition per seed must be used unchanged for feature sets 4/6/8 and every model family.",
+  "output_hashes_sha256": {
+    "prepared": "56c90ab907c76567b7f26cf761ad45695c0b8e3ebe732ed43b04f5f8be74ca7b",
+    "selected": "902c22d120dff65c5529fd0e123622a6122531d5ce5589021e987ee1b52b3575",
+    "splits": "0ecb7978ab509151cc1f2b4e2fbabe6b2ef98450597be8f4999d82ab92d383b5",
+    "cleaning": "98fb1f2a2eb0676da26628aa3d3160b87b9ad335b4c0a9e92f2f886d7a007cfa",
+    "dedup": "637eb6673abfcab6f623ed729e25ea8d8a28476f5f73c0b1e5ac788d9323e953",
+    "allocation": "2bd116a03588f25c7998ab8a496e0201f68cdc395014f34e00905c4a13d7d2f8",
+    "composition": "4e79fcc18af0fa016df5efc03fad5afeb7779dc51fcfd2071de03626795272de",
+    "leakage": "9e4218c20052793fb7ca733d0fbc1ce9f726059dbdcba4c03969d75a4189ab8d"
+  },
+  "package_versions": {
+    "python": "3.10.5",
+    "implementation": "cpython",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "17.0.0",
+    "duckdb": "1.5.5",
+    "scikit-learn": "1.5.2",
+    "xgboost": "2.1.1",
+    "tensorflow": "2.17.0",
+    "keras": "3.4.1",
+    "scikeras": "0.13.0",
+    "joblib": "1.4.2",
+    "scapy": "2.6.1",
+    "scipy": "1.14.1"
+  },
+  "official_source_files": 18,
+  "raw_inventory_total_rows": 70427637,
+  "created_utc": "2026-08-19T11:23:08.873678+00:00"
+}

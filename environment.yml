@@ -1,0 +1,8 @@
+name: omnet-ddos-validation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.5
+  - pip=24.2
+  - pip:
+      - -r requirements.txt

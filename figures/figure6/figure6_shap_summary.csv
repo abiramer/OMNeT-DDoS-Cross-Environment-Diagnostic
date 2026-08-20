@@ -1,0 +1,9 @@
+feature,mean_abs_treeshap
+Total Fwd Packets,0.88442236
+Total Backward Packets,0.7412424
+Flow Bytes/s,0.41399965
+Flow Packets/s,0.62781984
+Flow Duration,0.4738065
+Total Length of Fwd Packets,0.78279734
+Total Length of Bwd Packets,0.66717464
+Fwd Packet Length Mean,3.668301

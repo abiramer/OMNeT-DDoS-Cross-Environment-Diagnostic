@@ -1,0 +1,19 @@
+# Portable path examples for a local reproduction checkout.
+#
+# Scripts accept their paths as command-line arguments; this file is a template
+# for users and automation wrappers. Relative paths resolve from the project
+# root. Never commit a personalized copy containing private machine paths.
+
+dataset:
+  raw_root: "/path/to/user-supplied/CICDDoS2019"
+  inventory_output: "work/inventory"
+  prepared_output: "work/prepared"
+
+simulation:
+  omnet_root: "/path/to/omnetpp-6.0.3"
+  inet_root: "/path/to/inet-4.5.4"
+
+artifacts:
+  models: "artifacts/models"
+  reports: "artifacts/reports"
+

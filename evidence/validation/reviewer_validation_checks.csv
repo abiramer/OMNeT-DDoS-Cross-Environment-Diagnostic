@@ -1,0 +1,38 @@
+check,status,detail
+python_version_snapshot,pass,path=results\environment\python-version-20260819T144816.txt bytes=15
+pip_freeze_snapshot,pass,path=results\environment\pip-freeze-20260819T144816.txt bytes=930
+python_exact_3_10_5,pass,observed=Python 3.10.5
+summary_rows,pass,observed=108 expected=108
+summary_unique_keys,pass,duplicates=0
+summary_seed_counts,pass,values=[10]
+summary_metric_set,pass,"metrics=['accuracy', 'balanced_accuracy', 'f1', 'mcc', 'pr_auc_benign', 'pr_auc_ddos', 'precision', 'recall', 'roc_auc']"
+summary_finite_estimable_values,pass,"columns=['mean', 'sd', 'ci95_low_raw', 'ci95_high_raw', 'ci95_low', 'ci95_high']"
+bounded_display_ci_within_0_1,pass,bounded_rows=96
+means_sd_raw_t_ci_unchanged,pass,mismatched_rows=0
+training_metric_rows,pass,observed=120 expected=120
+training_metric_unique_keys,pass,duplicates=0
+frozen_training_seeds,pass,"seeds=[104729, 130363, 155921, 181081, 206369, 231701, 257053, 282427, 307759, 333019]"
+paired_rows,pass,observed=270 expected=270
+paired_unique_keys,pass,duplicates=0
+paired_matched_ten_seeds,pass,seed_counts=[10] status=['tested']
+paired_holm_recomputed,pass,rows=270 max_abs_difference=1.83e-14
+mcnemar_rows,pass,observed=660 expected=660
+mcnemar_unique_keys,pass,duplicates=0
+mcnemar_all_predictions_matched,pass,statuses=['tested']
+mcnemar_holm_recomputed,pass,rows=660 max_abs_difference=2.38e-14
+feature_4_6_8_split_files_identical,pass,mismatched_seeds=[]
+holdout_prediction_rows,pass,observed=5225664 expected=5225664
+holdout_prediction_unique_keys,pass,bad_keys=0
+holdout_predictions_matched_across_features_models,pass,bad_seed_sample_groups=0
+omnet_prediction_rows,pass,observed=1237440 expected=1237440
+omnet_prediction_unique_keys,pass,bad_keys=0
+omnet_prediction_alignment,pass,bad_sample_groups=0
+omnet_unique_labelled_flows,pass,observed=10312 expected=10312
+omnet_metric_rows,pass,observed=4800 expected=4800
+omnet_metric_unique_keys,pass,duplicates=0
+omnet_estimable_metrics_finite,pass,invalid_values=0
+omnet_undefined_explicit,pass,not_estimable_cells=12418
+final_table_bounded_cis,pass,checked=272 failures=[]
+final_table_excludes_run4,pass,case-insensitive run4 search
+final_table_explicit_not_estimable,pass,undefined metrics retained
+concise_table_expected_rows,pass,"observed={'Main hold-out comparison': 12, 'OMNeT++ cross-environment results by scenario': 48, 'Feature sensitivity': 24, 'Principal feature-8 classifier comparisons': 12, 'Feature-8 OMNeT++ consensus confusion matrices': 4, 'OMNeT++ classifier agreement': 18, 'Matched McNemar summary for feature 8': 6} expected={'Main hold-out comparison': 12, 'OMNeT++ cross-environment results by scenario': 48, 'Feature sensitivity': 24, 'Principal feature-8 classifier comparisons': 12, 'Feature-8 OMNeT++ consensus confusion matrices': 4, 'OMNeT++ classifier agreement': 18, 'Matched McNemar summary for feature 8': 6}"

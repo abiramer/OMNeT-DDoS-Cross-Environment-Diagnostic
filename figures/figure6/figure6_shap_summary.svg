@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="570" viewBox="0 0 1120 570">
+<rect width="100%" height="100%" fill="white"/>
+<text x="560.0" y="30" text-anchor="middle" font-family="Arial" font-size="20">Feature-8 XGBoost TreeSHAP summary — seed 104729</text>
+<text x="560.0" y="52" text-anchor="middle" font-family="Arial" font-size="12">Mean absolute contribution to the DDoS-class raw margin; deterministic 10,000-row hold-out sample</text>
+<text x="318" y="104.1" text-anchor="end" font-family="Arial" font-size="13">Flow Bytes/s</text>
+<rect x="330" y="82.1" width="81.3" height="34" fill="#1f77b4"/>
+<text x="419.3" y="104.1" font-family="Arial" font-size="12">0.414</text>
+<text x="318" y="158.2" text-anchor="end" font-family="Arial" font-size="13">Flow Duration</text>
+<rect x="330" y="136.2" width="93.0" height="34" fill="#1f77b4"/>
+<text x="431.0" y="158.2" font-family="Arial" font-size="12">0.473807</text>
+<text x="318" y="212.3" text-anchor="end" font-family="Arial" font-size="13">Flow Packets/s</text>
+<rect x="330" y="190.3" width="123.2" height="34" fill="#1f77b4"/>
+<text x="461.2" y="212.3" font-family="Arial" font-size="12">0.62782</text>
+<text x="318" y="266.4" text-anchor="end" font-family="Arial" font-size="13">Total Length of Bwd Packets</text>
+<rect x="330" y="244.4" width="131.0" height="34" fill="#1f77b4"/>
+<text x="469.0" y="266.4" font-family="Arial" font-size="12">0.667175</text>
+<text x="318" y="320.6" text-anchor="end" font-family="Arial" font-size="13">Total Backward Packets</text>
+<rect x="330" y="298.6" width="145.5" height="34" fill="#1f77b4"/>
+<text x="483.5" y="320.6" font-family="Arial" font-size="12">0.741242</text>
+<text x="318" y="374.7" text-anchor="end" font-family="Arial" font-size="13">Total Length of Fwd Packets</text>
+<rect x="330" y="352.7" width="153.6" height="34" fill="#1f77b4"/>
+<text x="491.6" y="374.7" font-family="Arial" font-size="12">0.782797</text>
+<text x="318" y="428.8" text-anchor="end" font-family="Arial" font-size="13">Total Fwd Packets</text>
+<rect x="330" y="406.8" width="173.6" height="34" fill="#1f77b4"/>
+<text x="511.6" y="428.8" font-family="Arial" font-size="12">0.884422</text>
+<text x="318" y="482.9" text-anchor="end" font-family="Arial" font-size="13">Fwd Packet Length Mean</text>
+<rect x="330" y="460.9" width="720.0" height="34" fill="#1f77b4"/>
+<text x="1058.0" y="482.9" font-family="Arial" font-size="12">3.6683</text>
+<text x="560.0" y="552" text-anchor="middle" font-family="Arial" font-size="13">Mean |TreeSHAP contribution| (XGBoost raw-margin units)</text>
+</svg>

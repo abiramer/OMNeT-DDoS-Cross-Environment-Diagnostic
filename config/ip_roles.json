@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "description": "Frozen IPv4 identity and traffic-role mapping for OMNeT++ ground truth.",
+  "roles": {
+    "benign_clients": {"first": "10.0.0.2", "last": "10.0.0.51"},
+    "attackers": {"first": "10.0.0.52", "last": "10.0.0.71"},
+    "victim": {"address": "10.0.0.130"},
+    "dns_reflectors": {"first": "10.0.0.146", "last": "10.0.0.155"}
+  },
+  "traffic_rules": [
+    {"source_role": "benign_clients", "destination_role": "victim",
+     "protocol": "UDP", "destination_port": 9000,
+     "ground_truth_label": "BENIGN", "traffic_source": "benign_client"},
+    {"source_role": "attackers", "destination_role": "victim",
+     "protocol": "UDP", "destination_port": 9000,
+     "ground_truth_label": "DDoS", "traffic_source": "udp_attacker"},
+    {"source_role": "attackers", "destination_role": "victim",
+     "protocol": "TCP", "destination_port": 80,
+     "ground_truth_label": "DDoS", "traffic_source": "tcp_attacker"},
+    {"source_role": "dns_reflectors", "destination_role": "victim",
+     "protocol": "UDP", "source_port": 1025, "destination_port": 53,
+     "ground_truth_label": "DDoS", "traffic_source": "dns_reflector"}
+  ]
+}

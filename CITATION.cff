@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: >-
+  Please cite this software release and the associated manuscript.
+title: "AI-Driven Simulated DDoS Attacks in OMNeT++ using SHAP-Based Explainability Analysis"
+type: software
+version: 1.0.0
+date-released: 2026-08-20
+doi: 10.5281/zenodo.22025873
+repository-code: "https://github.com/abiramer/OMNeT-DDoS-Cross-Environment-Diagnostic"
+url: "https://doi.org/10.5281/zenodo.22025873"
+authors:
+  - family-names: Amer
+    given-names: Abir
+    affiliation: "Faculty of Arts and Sciences, Computer Science Department, Modern University for Business and Sciences (MUBS), Damour, Lebanon"
+  - family-names: Shour
+    given-names: Hadi
+    affiliation: "Faculty of Arts and Sciences, Computer Science Department, Modern University for Business and Sciences (MUBS), Damour, Lebanon"
+  - family-names: El Fawal
+    given-names: Ahmad Hani
+    affiliation: "Modern University for Business and Sciences (MUBS); LABSTICC, UMR 6285 CNRS, ENSTA-IP Paris"
+  - family-names: Nasser
+    given-names: Abbass
+    affiliation: "LABSTICC, UMR 6285 CNRS, ENSTA-IP Paris; CIRAME Research Center, Holy Spirit University of Kaslik"
+  - family-names: Mansour
+    given-names: Ali
+    affiliation: "LABSTICC, UMR 6285 CNRS, ENSTA-IP Paris"
+  - family-names: Andrieux
+    given-names: Guillaume
+    affiliation: "Nantes Université, CNRS, IETR, UMR 6164"
+keywords:
+  - DDoS
+  - OMNeT++
+  - INET
+  - CICDDoS2019
+  - cross-environment diagnostic
+  - reproducibility

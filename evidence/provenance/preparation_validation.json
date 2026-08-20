@@ -1,0 +1,27 @@
+{
+  "status": "valid",
+  "validated_utc": "2026-08-19T11:26:14.299731+00:00",
+  "N": 108381,
+  "selected_total": 216762,
+  "split_seeds": [
+    104729,
+    130363,
+    155921,
+    181081,
+    206369,
+    231701,
+    257053,
+    282427,
+    307759,
+    333019
+  ],
+  "prepared_manifest_sha256": "0110631a4c2d37f775be1ec95ae082d1c46898b5e6c01a294867cf5339051913",
+  "prepared_dataset_sha256": "56c90ab907c76567b7f26cf761ad45695c0b8e3ebe732ed43b04f5f8be74ca7b",
+  "selected_rows_sha256": "902c22d120dff65c5529fd0e123622a6122531d5ce5589021e987ee1b52b3575",
+  "split_manifest_sha256": "0ecb7978ab509151cc1f2b4e2fbabe6b2ef98450597be8f4999d82ab92d383b5",
+  "raw_sources_rehashed": false,
+  "raw_source_integrity_basis": "Previously validated SHA-256 inventory plus current presence/byte-size checks; selected provenance hashes were matched to that inventory.",
+  "checks_passed": 31,
+  "checks_failed": 0,
+  "checks_csv_sha256": "f6948294fb3b86b5637cccef29ead1fbc1e0cc372ec98e44ca4ae78b15ce897f"
+}

@@ -1,0 +1,12 @@
+# One OMNeT++ Mersenne-Twister seed per independent run.
+# The same values are used as ML random-state identifiers.
+104729
+130363
+155921
+181081
+206369
+231701
+257053
+282427
+307759
+333019

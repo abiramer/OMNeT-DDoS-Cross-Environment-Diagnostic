@@ -1,0 +1,35 @@
+{
+  "component_artifacts": [
+    "xgboost-seed333019.joblib",
+    "rf-seed333019.joblib",
+    "mlp-seed333019.joblib"
+  ],
+  "feature_order": [
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow Duration",
+    "Total Length of Fwd Packets"
+  ],
+  "feature_set": 6,
+  "package_versions": {
+    "duckdb": "1.5.5",
+    "implementation": "cpython",
+    "joblib": "1.4.2",
+    "keras": "3.4.1",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "17.0.0",
+    "python": "3.10.5",
+    "scapy": "2.6.1",
+    "scikeras": "0.13.0",
+    "scikit-learn": "1.5.2",
+    "scipy": "1.14.1",
+    "tensorflow": "2.17.0",
+    "xgboost": "2.1.1"
+  },
+  "rule": "hard majority vote of xgboost/rf/mlp; mean DDoS probability for ranking",
+  "seed": 333019,
+  "split_ids_file": "split_ids_seed333019.csv"
+}

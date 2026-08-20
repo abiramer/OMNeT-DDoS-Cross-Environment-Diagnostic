@@ -1,0 +1,327 @@
+{
+  "files": [
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed104729.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed130363.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed155921.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed181081.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed206369.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed231701.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed257053.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed282427.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed307759.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\DNSAmplification-seed333019.csv",
+      "rows": 60,
+      "benign": 50,
+      "ddos": 10,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed104729.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed130363.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed155921.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed181081.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed206369.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed231701.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed257053.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed282427.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed307759.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\Normal-seed333019.csv",
+      "rows": 50,
+      "benign": 50,
+      "ddos": 0,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed104729.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed130363.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed155921.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed181081.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed206369.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed231701.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed257053.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed282427.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed307759.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\SYNFlood-seed333019.csv",
+      "rows": 850,
+      "benign": 50,
+      "ddos": 800,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed104729.csv",
+      "rows": 70,
+      "benign": 50,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed130363.csv",
+      "rows": 70,
+      "benign": 50,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed155921.csv",
+      "rows": 73,
+      "benign": 53,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed181081.csv",
+      "rows": 70,
+      "benign": 50,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed206369.csv",
+      "rows": 70,
+      "benign": 50,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed231701.csv",
+      "rows": 72,
+      "benign": 52,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed257053.csv",
+      "rows": 75,
+      "benign": 55,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed282427.csv",
+      "rows": 70,
+      "benign": 50,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed307759.csv",
+      "rows": 70,
+      "benign": 50,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    },
+    {
+      "file": "extracted\\full-canonical-v1-run5-inet454-labeled8\\UDPFlood-seed333019.csv",
+      "rows": 72,
+      "benign": 52,
+      "ddos": 20,
+      "zero_duration": 0,
+      "unknown_or_invalid_flows": 0
+    }
+  ],
+  "total_rows": 10312,
+  "unknown_or_invalid_flows": 0,
+  "status": "valid"
+}

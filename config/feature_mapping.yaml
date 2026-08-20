@@ -1,0 +1,33 @@
+features:
+  Total Fwd Packets:
+    unit: packets
+    definition: "Packets from the initiating source to the destination within one bidirectional 5-tuple flow."
+  Total Backward Packets:
+    unit: packets
+    definition: "Packets in the reverse direction of the same bidirectional 5-tuple flow."
+  Flow Bytes/s:
+    unit: bytes/s
+    definition: "Sum of forward and backward IP packet bytes divided by flow duration in seconds."
+  Flow Packets/s:
+    unit: packets/s
+    definition: "Sum of forward and backward packet counts divided by flow duration in seconds."
+  Flow Duration:
+    unit: microseconds
+    definition: "Last packet timestamp minus first packet timestamp, converted to integer microseconds (CICFlowMeter-compatible unit)."
+  Total Length of Fwd Packets:
+    unit: IPv4 bytes
+    definition: "Sum of IPv4 total-length fields in the initiating/forward direction, including every IPv4 fragment."
+  Total Length of Bwd Packets:
+    unit: IPv4 bytes
+    definition: "Sum of IPv4 total-length fields in the reverse direction, including every IPv4 fragment."
+  Fwd Packet Length Mean:
+    unit: IPv4 bytes/packet
+    definition: "Total Length of Fwd Packets divided by Total Fwd Packets."
+flow_key: [protocol, endpoint_a_ip, endpoint_a_port, endpoint_b_ip, endpoint_b_port]
+idle_timeout_s: 15
+active_timeout_s: 120
+direction_rule: "The first observed packet establishes the forward direction."
+packet_length_layer: "IPv4 total length (IPv4 header plus payload), not captured Ethernet frame length."
+fragmentation_rule: "Each captured IPv4 fragment counts as one packet and contributes its IPv4 total length; non-initial fragments inherit ports from the first fragment by source, destination, protocol, and IPv4 identification. Non-initial fragments observed before the first fragment are deferred with their original capture timestamps. If the first fragment never appears, ports are assigned only when a unique source and destination port fallback is explicitly frozen in config/ip_roles.json (DNS reflector UDP 1025-to-53); all other unresolved fragments fail extraction. If the first fragment is captured but the final fragment is not, observed fragments remain counted and the incomplete datagram is reported in the per-CSV extraction metadata. No missing packet is synthesized."
+zero_duration_rule: "Flow Duration is 0 and both rate fields are empty/not estimable; no artificial epsilon duration is substituted."
+ground_truth_role_mapping: config/ip_roles.json

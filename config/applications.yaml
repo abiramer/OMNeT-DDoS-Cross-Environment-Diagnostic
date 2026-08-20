@@ -1,0 +1,31 @@
+applications:
+  benign_udp_echo:
+    clients: "benign[0..49]"
+    client_module: inet.applications.udpapp.UdpBasicApp
+    server_module: inet.applications.udpapp.UdpEchoApp
+    server_port: 9000
+    payload_bytes: 320
+    interval: uniform(1s,2s)
+  udp_flood:
+    clients: "attacker[0..19]"
+    module: inet.applications.udpapp.UdpBasicApp
+    server_port: 9000
+    payload_bytes: 1024
+    interval: 1ms
+  syn_like_connection_flood:
+    clients: "attacker[0..19]"
+    module: inet.applications.tcpapp.TcpSessionApp
+    server_module: inet.applications.tcpapp.TcpSinkApp
+    server_port: 80
+    parallel_sessions_per_attacker: 20
+    open_time: uniform(20s,21s)
+    payload_bytes: 1
+    close_time_s: 100
+    qualification: "TCP connection-exhaustion approximation; not raw forged or half-open SYN traffic."
+  dns_amplification_reply_stream:
+    clients: "reflector[0..9]"
+    module: inet.applications.udpapp.UdpBasicApp
+    client_port: 1025
+    server_port: 53
+    response_bytes: 4096
+    interval: 2ms

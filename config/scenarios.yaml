@@ -1,0 +1,55 @@
+experiment:
+  simulation_time_s: 120
+  warmup_s: 10
+  attack_start_s: 20
+  attack_stop_s: 100
+  repetitions: 10
+  rng: MersenneTwister
+  rng_index: 0
+  seeds: [104729, 130363, 155921, 181081, 206369, 231701, 257053, 282427, 307759, 333019]
+
+topology:
+  benign_clients: 50
+  attackers: 20
+  dns_reflectors: 10
+  access_links: "100 Mbps Ethernet"
+  ethernet_length_m: 10
+  propagation_delay_ns: 50
+  ethernet_interface_queue_packets_effective: 1000
+  queue_source: "INET 4.5.4 EthernetInterface.queue packetCapacity default; not overridden by omnetpp.ini"
+  bottleneck_note: "No artificial bottleneck is imposed in this reference package. Change edgeRouter-server link only through a documented sensitivity configuration."
+
+traffic:
+  benign:
+    transport: UDP
+    payload_bytes: 320
+    interval_s: [1.0, 2.0]
+    destination_port: 9000
+  udp_flood:
+    sources: 20
+    payload_bytes: 1024
+    interval_ms: 1
+    destination_port: 9000
+  syn_flood:
+    sources: 20
+    parallel_sessions_per_source: 20
+    payload_bytes: 1
+    close_time_s: 100
+    destination_port: 80
+    qualification: "TCP connection-exhaustion approximation using parallel sessions; not raw forged or half-open SYN generation."
+  dns_amplification:
+    reflectors: 10
+    response_bytes: 4096
+    interval_ms: 2
+    destination_port: 53
+    qualification: "Models amplified replies at the target; not an exact reproduction of CICDDoS2019 DNS infrastructure."
+
+features:
+  - Total Fwd Packets
+  - Total Backward Packets
+  - Flow Bytes/s
+  - Flow Packets/s
+  - Flow Duration
+  - Total Length of Fwd Packets
+  - Total Length of Bwd Packets
+  - Fwd Packet Length Mean

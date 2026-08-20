@@ -1,0 +1,28 @@
+Licensing notice for version 1.0.0
+===================================
+
+Copyright (c) 2026 Abir Amer, Hadi Shour, Ahmad Hani El Fawal,
+Abbass Nasser, Ali Mansour, and Guillaume Andrieux.
+
+Original source code in this release, including files under `scripts/`,
+`src/`, `tests/`, and original build/configuration code, is licensed under
+the MIT License. The full license text is in `LICENSES/MIT.txt`.
+
+Original documentation, original figures, and aggregate results in this
+release are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0). This includes original Markdown and text
+documentation and public-safe aggregate result tables under `evidence/`.
+The full legal code is in `LICENSES/CC-BY-4.0.txt`.
+
+This licensing notice does not relicense third-party material. In particular:
+
+* CICDDoS2019 is not included and is not relicensed.
+* OMNeT++ and INET are not included as third-party distributions and remain
+  subject to their respective licenses.
+* Python packages and all other dependencies retain their own licenses.
+* Excluded frozen model payloads and excluded row-level scientific artifacts
+  are not licensed or approved for redistribution by this release.
+
+See `THIRD_PARTY_NOTICES.md`, `PUBLIC_DATA_PROVENANCE.md`, and
+`EXCLUDED_FILES_SUMMARY.md` for scope and acquisition details.
+
