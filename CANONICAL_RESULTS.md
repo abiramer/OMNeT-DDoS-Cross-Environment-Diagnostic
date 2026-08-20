@@ -185,7 +185,7 @@ Each classifier pair has 10 exact, seedwise McNemar tests on identical hold-out 
 Detailed seed-level outputs are indexed in the timestamped supplementary file.
 
 
-## Figure 5 publication-freeze output
+## Figure 5 — Version 1.0.0 output
 
 `figures/figure5/` contains the approved feature-8 matched ten-seed ROC
 summary generated only from the frozen canonical hold-out predictions. It uses
@@ -193,12 +193,12 @@ all ten seeds and all four classifiers, reports mean and sample SD, displays
 ±1 sample SD bands for interpolated TPR, and records the input SHA-256. No
 favorable seed or run4 evidence is used.
 
-## Figure 6 publication-freeze output
+## Figure 6 — Version 1.0.0 output
 
 `figures/figure6/` contains the approved aggregate TreeSHAP summary for the
-frozen canonical feature-8 XGBoost model trained with seed 104729. The author
-selected 104729 as the first seed in the predefined numerically ordered frozen
-seed list, independently of performance. The script verifies the model hash,
+frozen canonical feature-8 XGBoost model trained with seed 104729. Seed 104729
+is the first seed in the predefined numerically ordered frozen seed list and
+was selected independently of performance. The script verifies the model hash,
 metadata, feature order, run5 training metadata, and frozen hold-out split. It
 uses 10,000 hold-out observations selected without replacement by deterministic
 SHA-256 rank. Native XGBoost 2.1.1 tree-path-dependent TreeSHAP uses no external

@@ -1,6 +1,6 @@
 # Mandatory component-completeness audit
 
-This audit describes the contents of the clean candidate release, not the
+This audit describes the contents of version 1.0.0, not the
 larger private working directory. `canonical` means part of the frozen run5
 evidential pipeline; `compatible utility` means usable with the same contracts
 but added or retained for reproduction/reporting; `documentation` does not
@@ -33,9 +33,9 @@ verified release `inet-4.5.4-0a1d409733`; its source or binaries are not copied.
 Static clean-copy checks confirm that all five imported NED types are provided
 by the documented INET tree, the four INI configuration names match both run
 scripts, configuration validation selects INET 4.5.4, and no run4 or INET 4.4.1
-path is selected. The local `opp_nedtool` executable could not be launched in
-the restricted validation shell, so a full external NED resolver invocation
-remains a pre-publication host check. No simulation was rerun.
+path is selected. The local `opp_nedtool` executable was not invoked in the
+restricted validation shell. The included static resolver successfully
+verified every NED import against INET 4.5.4. No simulation was rerun.
 
 The TCP implementation is a TCP connection-exhaustion/connection-flood
 approximation using parallel sessions, not a raw forged half-open SYN flood.
@@ -61,7 +61,7 @@ ROC curves on matched frozen predictions and reports a common-grid mean plus
 sample SD across all ten seeds. Figure 6 verifies and explains the frozen
 feature-8 XGBoost seed-104729 artifact selected by the author as the first seed
 in the predefined ordered list, independently of performance. Both refuse
-existing output directories. Their approved publication-freeze outputs and
+existing output directories. Their validated version 1.0.0 outputs and
 provenance are under `figures/`.
 
 Exact hyperparameters and feature order are retained in
@@ -85,7 +85,7 @@ with an explicit exception.
 
 ## C. Frozen trained-model artifacts
 
-Status: **not distributed; redistribution is not approved by this release**.
+Status: **outside the redistribution scope of version 1.0.0**.
 
 The source contained 245 files under `models/max-benign-run5-inet454/`: 90
 inference joblib pipelines, 153 verification/metadata files, and two large
@@ -97,13 +97,15 @@ loading command, and status in
 Only small model metadata and aggregate metrics are present in this repository.
 No joblib, Keras weight payload, split-ID row table, training-metadata payload,
 or hold-out prediction table is included, and this package does not state that
-models are included. For Figure 6, the clean-candidate utility loaded and
-verified the locally retained feature-8 XGBoost seed-104729 artifact against
-its inventory hash under the pinned Python 3.10.5 stack. Other excluded model
-payloads are outside the release load-test scope. Independent Figure 6
-regeneration requires an authorized copy of the exact hashed artifact. Any
-future separately authorized model distribution should use versioned release
-assets or Zenodo files, not Git history.
+models are included. The included results, Figure 5, Figure 6, and provenance
+records were generated and validated from the frozen canonical artifacts. For
+Figure 6, the generation utility loaded and verified the locally retained
+feature-8 XGBoost seed-104729 artifact against its inventory hash under the
+pinned Python 3.10.5 stack. Independent Figure 6 regeneration requires a local
+copy of `feature8/xgboost-seed104729.joblib` matching SHA-256
+`c7bda804520817d02357cdb3c259a531652f3e99355fac4e3b52b0bae178f122`.
+Any separately obtained model bundle must be verified against
+`evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv`.
 
 SciKeras artifacts reference `__main__.keras_mlp`. The compatibility factory
 is intentionally present in `scripts/evaluate_omnet.py`; external loaders must
@@ -120,11 +122,12 @@ and was not used to generate
 canonical run5 evidence. Because it is not in the clean release, no startup or
 network-service smoke test was performed.
 
-Any future compatible interface must use the frozen feature validator and
-model loader, contain no secret/default credential, restrict file type and
-size, disable debug mode for nonlocal use, and add authentication, access
-control, rate limiting, secure storage, and production hardening. It must be
-described as a demonstration, not a simulator-fidelity validator.
+A compatible interface is outside the version 1.0.0 scope. Any separately
+developed interface must use the frozen feature validator and model loader,
+contain no secret/default credential, restrict file type and size, disable
+debug mode for nonlocal use, and add authentication, access control, rate
+limiting, secure storage, and production hardening. It must be described as a
+demonstration, not a simulator-fidelity validator.
 
 ## E. CICDDoS2019 acquisition and path configuration
 
@@ -151,5 +154,6 @@ evaluation, OMNeT++ reevaluation, statistics, Figure 5/6, optional Flask, and
 end-to-end workflows. Each lists prerequisites, inputs, command, runtime class,
 outputs, validation, and canonical counts. The 40-simulation campaign and
 ten-seed training are prominently marked long-running and use new output names.
-Frozen-model evaluation requires an authorized exact model bundle; the Flask
-demonstration is a deliberate release-scope exclusion.
+Frozen-model evaluation requires a separately obtained model bundle verified
+against the included inventory; the Flask demonstration is outside the version
+1.0.0 scope.

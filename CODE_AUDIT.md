@@ -1,8 +1,8 @@
 # Legacy `Code/` directory audit
 
 All 460 files in the development repository's `Code/` directory were
-classified individually in the private release-preparation audit. None is
-copied into this public candidate.
+classified individually in the release-preparation audit. None is included in
+version 1.0.0.
 
 | Classification | Files | Public disposition |
 |---|---:|---|
@@ -17,7 +17,8 @@ canonical results, depends on obsolete or release-unqualified model files and a 
 database, and failed the safe clean-release gate. It has therefore not been
 silently rewritten or represented as canonical.
 
-A future Flask release must be rebuilt as a separate compatible demonstration
-with safe example configuration, the canonical eight-feature validation
-contract, the frozen-artifact loader, no uploaded histories or credentials,
-and the controls listed in `SECURITY_AND_DUAL_USE.md`.
+The Flask application is outside the version 1.0.0 scope. A separately
+developed compatible demonstration must use safe example configuration, the
+canonical eight-feature validation contract, the frozen-artifact loader, no
+uploaded histories or credentials, and the controls listed in
+`SECURITY_AND_DUAL_USE.md`.

@@ -20,9 +20,9 @@ This licensing notice does not relicense third-party material. In particular:
 * OMNeT++ and INET are not included as third-party distributions and remain
   subject to their respective licenses.
 * Python packages and all other dependencies retain their own licenses.
-* Excluded frozen model payloads and excluded row-level scientific artifacts
-  are not licensed or approved for redistribution by this release.
+* Excluded frozen model payloads, split-ID payloads, and row-level scientific
+  artifacts are outside the redistribution scope of version 1.0.0 and are not
+  relicensed.
 
 See `THIRD_PARTY_NOTICES.md`, `PUBLIC_DATA_PROVENANCE.md`, and
 `EXCLUDED_FILES_SUMMARY.md` for scope and acquisition details.
-

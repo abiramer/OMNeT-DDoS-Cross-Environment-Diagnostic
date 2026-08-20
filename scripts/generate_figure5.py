@@ -199,7 +199,7 @@ def main() -> None:
     _svg(svg_curves, args.output_dir / "figure5_roc_summary.svg", args.feature_set)
     _png(svg_curves, args.output_dir / "figure5_roc_summary.png", args.feature_set)
     metadata = {
-        "classification": "publication-freeze output from frozen canonical predictions",
+        "classification": "version 1.0.0 output from frozen canonical predictions",
         "input_filename": args.predictions.name,
         "input_sha256": _sha256(args.predictions), "feature_set": args.feature_set,
         "models": args.models, "seeds": args.seeds, "grid_points": args.grid_points,

@@ -5,7 +5,7 @@ validation runtime and the package's pinned scientific versions. Neither
 simulation, preparation, extraction, training, prediction, nor statistical
 analysis was rerun. First-pass PNGs with overlapping headings were retained
 outside the release as audit evidence; only layout was changed before the
-approved renders below were regenerated.
+validated renders below were regenerated.
 
 ## Figure 5 — matched ten-seed ROC summary
 
@@ -64,4 +64,3 @@ performance.
 
 Figure 6 explains the selected classifier's predictions only. It does not
 establish simulator realism or fidelity.
-

@@ -1,9 +1,13 @@
 # Frozen model artifacts: inventory and regeneration
 
-The canonical trained-model payload is **not included** in this candidate
-release. Redistribution is not approved by this release, and the
-source directory also contains large row-level split/prediction artifacts that
-are unsuitable for ordinary Git history.
+Frozen model and split-ID payloads are outside the redistribution scope of
+version 1.0.0. The included results, Figure 5, Figure 6, and provenance records
+were generated and validated from the frozen canonical artifacts. Independent
+Figure 6 regeneration requires a local copy of
+`feature8/xgboost-seed104729.joblib` matching SHA-256
+`c7bda804520817d02357cdb3c259a531652f3e99355fac4e3b52b0bae178f122`.
+The source model directory also contains large row-level split and prediction
+artifacts that are unsuitable for ordinary Git history.
 
 The complete 245-file inventory is
 `evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv`. It records every
@@ -20,7 +24,7 @@ and release status. The inventory comprises:
 - environment and aggregate metric files; and
 - the large hold-out prediction and training-metadata payloads.
 
-## Expected layout for an authorized local copy
+## Expected layout for a separately obtained local copy
 
 ```text
 artifacts/models/max-benign-run5-inet454/
@@ -38,10 +42,8 @@ artifacts/models/max-benign-run5-inet454/
 ```
 
 Do not commit payloads over GitHub's ordinary per-file limit to repository
-history. Redistribution is outside this release's approved scope. If the
-authors and institution later authorize separate distribution, use versioned
-release assets or Zenodo files, record each bundle hash, and verify that
-extracted files match the inventory.
+history. Any separately obtained model bundle must be verified against
+`evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv`.
 
 ## Regeneration
 
@@ -69,16 +71,12 @@ serialized from a script and refer to `__main__.keras_mlp`; use
 `scripts/evaluate_omnet.py`, which registers the compatible factory before
 loading, or register the exact same callable in an external loader.
 
-Frozen model payloads are not redistributed in this release. The included
-Figure 6 was generated and validated from the locally retained frozen
-feature-8 XGBoost artifact trained with seed 104729 (SHA-256:
-`c7bda804520817d02357cdb3c259a531652f3e99355fac4e3b52b0bae178f122`).
-The clean-candidate generation utility loaded that exact artifact under the
-pinned Python 3.10.5 stack and verified its identity, feature order, and seed.
-Independent regeneration requires an authorized copy of that exact artifact;
-the utility does not substitute another model. The remaining excluded payloads
-were not release load-tested, and hashes or metadata do not imply that model
-payloads are present.
+The Figure 6 generation utility loaded the exact feature-8 XGBoost artifact
+trained with seed 104729 under the pinned Python 3.10.5 stack and verified its
+identity, feature order, seed, and SHA-256. The utility does not substitute
+another model. Other model payloads are outside the version 1.0.0 load-test and
+redistribution scope; hashes and metadata do not imply that payloads are
+present.
 
 Expected aggregate performance is documented in `CANONICAL_RESULTS.md`,
 `evidence/training/seed_metrics.csv`, and

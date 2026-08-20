@@ -18,4 +18,5 @@ rate convention.
 `seeds.txt` is the ten-seed list shared by simulation and ML experiments.
 
 Run `python scripts/check_config_consistency.py` after configuration edits. A
-scientific methodology change requires coauthor review before complete runs.
+scientific methodology change defines a different protocol; complete version
+1.0.0 runs use the frozen configuration.

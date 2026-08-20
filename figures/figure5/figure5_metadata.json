@@ -1,5 +1,5 @@
 {
-  "classification": "publication-freeze output from frozen canonical predictions",
+  "classification": "version 1.0.0 output from frozen canonical predictions",
   "input_filename": "test_predictions.parquet",
   "input_sha256": "142d07b117619de2e00740d7e36264e8b70233cce959f69a9495f7a23fe17da3",
   "feature_set": 8,

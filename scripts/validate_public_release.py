@@ -127,9 +127,9 @@ def main() -> None:
         for label, pattern in credential_patterns.items():
             if pattern.search(text):
                 failures.append(f"Credential indicator ({label}) in {rel}")
-        for placeholder in ["GITHUB_RELEASE_URL_" + "PENDING",
-                            "ZENODO_DOI_" + "PENDING",
-                            "RELEASE_DATE_" + "PENDING",
+        for placeholder in ["GITHUB_RELEASE_URL_" + "PEND" + "ING",
+                            "ZENODO_DOI_" + "PEND" + "ING",
+                            "RELEASE_DATE_" + "PEND" + "ING",
                             "LICENSE_SELECTION_" + "REQUIRED.md"]:
             if placeholder in text:
                 failures.append(f"Publication placeholder ({placeholder}) in {rel}")

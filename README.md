@@ -1,18 +1,14 @@
-# OMNeT++ DDoS Cross-Environment Diagnostic — final candidate v1.0.0
+# OMNeT++ DDoS Cross-Environment Diagnostic — Version 1.0.0
 
 This clean package contains the source, configuration, tests, public-safe
 provenance, and aggregate evidence needed to reproduce and audit the canonical
 run5 study. It was assembled selectively; it is not a copy of the private
 working repository.
 
-Publication status: **publication-ready local candidate**. The source has been
-pushed to the private GitHub repository identified below, but no GitHub release
-or public Zenodo record has been published. The Zenodo DOI is reserved and is
-not publicly active through Zenodo until the author performs deposition.
+Version 1.0.0
 
-- GitHub repository: <https://github.com/abiramer/OMNeT-DDoS-Cross-Environment-Diagnostic>
-- Reserved Zenodo DOI: <https://doi.org/10.5281/zenodo.22025873>
-- Version: `1.0.0`
+- Source repository: <https://github.com/abiramer/OMNeT-DDoS-Cross-Environment-Diagnostic>
+- Archived release: <https://doi.org/10.5281/zenodo.22025873>
 - Release date: `2026-08-20`
 
 ## Scientific scope and interpretation
@@ -53,7 +49,7 @@ Excluded:
 - prepared/sampled row tables, split-ID tables, and row-level predictions;
 - PCAP, SCA, VEC, and VCI files;
 - run4, partial, smoke-output, cache, virtual-environment, and binary artifacts;
-- joblib/model payloads excluded because redistribution is not approved;
+- frozen model and split-ID payloads outside the version 1.0.0 redistribution scope;
 - manuscripts, reviewer correspondence, internal author checklists, and local
   machine logs;
 - the legacy Flask/Colab bundle, which failed the public safety gate.
@@ -348,11 +344,15 @@ MLP floating-point results across different TensorFlow hardware/kernels.
 
 ## Workflow 4 — evaluation of frozen models
 
-Frozen model payloads are not redistributed in this release. Evaluation with
-frozen models therefore requires an authorized copy of the exact bundle under
-`artifacts/models/max-benign-run5-inet454/`. Before use, match every file hash
-to `evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv`; the evaluator does
-not substitute or retrain a model. Then use Workflow 5.
+Frozen model and split-ID payloads are outside the redistribution scope of
+version 1.0.0. The included results, Figure 5, Figure 6, and provenance records
+were generated and validated from the frozen canonical artifacts. Independent
+Figure 6 regeneration requires a local copy of
+`feature8/xgboost-seed104729.joblib` matching SHA-256
+`c7bda804520817d02357cdb3c259a531652f3e99355fac4e3b52b0bae178f122`.
+Any separately obtained model bundle must be verified against
+`evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv`. The evaluator does
+not substitute or retrain a model.
 
 Validation before use:
 
@@ -426,7 +426,7 @@ means, SDs, raw t endpoints, unbounded statistics, and tests are unchanged.
 ## Workflow 7 — Figure 5 and Figure 6
 
 These compatible utilities create **new**, non-overwriting outputs from frozen
-artifacts. The publication-freeze outputs are included under `figures/` with
+artifacts. The validated version 1.0.0 outputs are included under `figures/` with
 their aggregate data and provenance. They do not modify frozen predictions or
 model artifacts.
 
@@ -485,8 +485,8 @@ Run Workflows 1, 2, 3, 5, 6, and 7 in that order, always using new `work/`,
 `artifacts/`, and `results/` output names. Workflow 1's full campaign and
 Workflow 3 are the two principal long-running operations; Workflow 2 is also
 large and disk-intensive. Do not launch them accidentally. Workflow 4 requires
-an authorized exact frozen-model bundle, and Workflow 8 is outside release
-scope.
+a separately obtained model bundle verified against the included inventory,
+and Workflow 8 is outside the version 1.0.0 scope.
 
 ## Tests and release validation
 
@@ -500,7 +500,7 @@ bash -n scripts/*.sh
 python scripts/validate_public_release.py .
 ```
 
-The publication-ready candidate passed 23/23 unit tests; the frozen preparation
+Version 1.0.0 passed 23/23 unit tests; the frozen preparation
 evidence records 31/31 checks. A warning that no libpcap provider is available is not a failure when
 the synthetic file-based Scapy PCAP tests pass. Live capture is not required.
 

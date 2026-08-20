@@ -1,31 +1,16 @@
 # Changelog
 
-## 1.0.0 final publication candidate - 2026-08-20
+## 1.0.0 - 2026-08-20
 
-- Added the approved MIT and CC BY 4.0 licensing scope, third-party notices,
-  confirmed repository URL, reserved Zenodo DOI, and release date.
-- Generated and visually validated Figure 5 from all ten frozen hold-out
-  prediction seeds and Figure 6 from the author-prespecified feature-8 XGBoost
-  seed-104729 artifact using a non-performance-based selection rule.
-- Added figure provenance, publication-freeze validation, and final archive
-  integrity metadata. No scientific stage was rerun.
+- Released version 1.0.0 of the reproducibility package.
+- Generated and validated Figure 5 from all ten frozen hold-out prediction seeds.
+- Generated and validated Figure 6 from the frozen feature-8 XGBoost
+  seed-104729 artifact, selected using a deterministic rule independent of
+  model performance.
+- Excluded frozen model and split-ID payloads from the version 1.0.0
+  redistribution scope.
 
-## 1.0.0 public candidate - 2026-08-19
-
-- Curated a clean allowlisted package around verified canonical run5 aggregate
-  evidence; excluded raw/row-level datasets, PCAP/SCA/VEC/VCI, model payloads,
-  run4, confidential editorial files, environments, caches, and private paths.
-- Added public-safe dataset provenance, component/model/Code audits, release
-  manifests, portable path examples, licensing gate, citation metadata,
-  dual-use guidance, and separate A–F reproduction workflows.
-- Added non-overwriting compatible Figure 5 ROC and Figure 6 XGBoost TreeSHAP
-  generators. The final publication candidate subsequently used them to create
-  and validate the included figures from frozen inputs: all ten seeds for
-  Figure 5 and the prespecified feature-8 seed-104729 artifact for Figure 6.
-- No simulation, extraction, dataset preparation, training, prediction, or
-  statistical-analysis stage was rerun during release assembly.
-
-## Unreleased - reconstructed protocol
+## Development history — reconstructed protocol
 
 - Reconstructed the OMNeT++/INET topology and application configurations from
   the manuscript description.
@@ -158,11 +143,11 @@
   reviewer validator. No favorable training seed is selected.
 - Recorded the effective INET 4.5.4 Ethernet-interface queue capacity of 1,000
   packets, added the mandatory reviewer evidence map and terminology audit, and
-  generated a non-uploading public-release manifest with inclusion decisions,
-  hashes, exact commands, restrictions, and the reserved Zenodo DOI.
+  generated the public-release manifest with inclusion decisions, hashes,
+  exact commands, restrictions, and the archived-release DOI.
 - Added focused synthetic tests, configuration consistency checks, and final
   manuscript-table assembly.
 
-Record every correction made during smoke testing here before creating the
-frozen `protocol-v1.0.0` tag. Do not record result-driven parameter tuning as a
-correction; instead predefine and justify a new protocol version.
+Corrections made during smoke testing are recorded here. Result-driven
+parameter tuning is not treated as a correction; a distinct protocol version
+requires predefined justification.

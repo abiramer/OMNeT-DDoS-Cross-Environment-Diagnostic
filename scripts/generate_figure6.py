@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Figure 6 for an author-prespecified frozen XGBoost artifact."""
+"""Generate Figure 6 for the deterministically prespecified frozen XGBoost artifact."""
 from __future__ import annotations
 
 import argparse
@@ -113,7 +113,7 @@ def main() -> None:
     if args.output_dir.exists():
         raise FileExistsError(f"Refusing to overwrite Figure 6 output: {args.output_dir}")
     if args.seed != 104729:
-        raise ValueError("Publication Figure 6 is frozen to author-approved seed 104729")
+        raise ValueError("Version 1.0.0 Figure 6 is frozen to deterministic seed 104729")
     seeds = [int(line) for line in args.seed_list.read_text().splitlines()
              if line.strip() and not line.lstrip().startswith("#")]
     if seeds != sorted(seeds) or not seeds or seeds[0] != args.seed:
