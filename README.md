@@ -5,9 +5,10 @@ provenance, and aggregate evidence needed to reproduce and audit the canonical
 run5 study. It was assembled selectively; it is not a copy of the private
 working repository.
 
-Publication-freeze status: **local final candidate; not yet uploaded**. The
-approved licenses and reserved publication metadata are included. No GitHub
-or Zenodo upload was performed while creating this candidate.
+Publication status: **publication-ready local candidate**. The source has been
+pushed to the private GitHub repository identified below, but no GitHub release
+or public Zenodo record has been published. The Zenodo DOI is reserved and is
+not publicly active through Zenodo until the author performs deposition.
 
 - GitHub repository: <https://github.com/abiramer/OMNeT-DDoS-Cross-Environment-Diagnostic>
 - Reserved Zenodo DOI: <https://doi.org/10.5281/zenodo.22025873>
@@ -39,6 +40,8 @@ Included:
 - the NED/INI simulation project and frozen configuration;
 - dataset inventory, preparation, training, evaluation, statistics, table, and
   compatible Figure 5/6 generation source;
+- completed and validated Figure 5 and Figure 6 publication outputs with
+  machine-readable provenance;
 - focused tests and configuration validation;
 - model metadata, exact hyperparameters, feature order, package snapshots, and
   hashes of every frozen artifact;
@@ -235,14 +238,15 @@ The exact application and scenario values are machine-readable in `config/`.
 
 | Workflow | Runtime class | Canonical count/output |
 |---|---|---|
-| configuration/tests | short | consistency JSON; 22-test canonical baseline |
+| configuration/tests | short | consistency JSON; 23-test validated release suite |
 | one Normal/TCP smoke run | short to moderate | new timestamped simulation directory |
 | one UDP/DNS smoke run | substantial | new timestamped simulation directory |
 | full simulation | **long-running** | 40 runs; 10/scenario; 40 nonempty PCAP/SCA/VEC/VCI sets |
 | dataset inventory/preparation | **long-running, high disk** | 70,427,637 raw rows; 216,762 selected rows |
 | ten-seed 4/6/8 training | **long-running** | 120 seed/model metric rows |
-| aggregate evaluation/statistics | moderate to long | 4,800 OMNeT++ metric rows; 270 paired; 660 McNemar |
-| Figure 5/6 utilities | moderate to long | new CSV/SVG/metadata directory; author review required |
+| aggregate evaluation/statistics | substantial; processes frozen row-level predictions | 4,800 OMNeT++ metric rows; 270 paired; 660 McNemar |
+| Figure 5 generation | moderate; processes 5,225,664 frozen predictions | new PNG/SVG/CSV/provenance directory; validate metadata and inspect the render before use |
+| Figure 6 generation | moderate; loads one verified model and a bounded sample | new PNG/SVG/CSV/provenance directory; verify artifact identity and inspect the render before use |
 
 Every write command below uses a new output name. Never point a reproduction at
 the frozen run5 paths.
@@ -344,10 +348,11 @@ MLP floating-point results across different TensorFlow hardware/kernels.
 
 ## Workflow 4 — evaluation of frozen models
 
-No frozen joblib payload is included, so this workflow intentionally stops
-until the authors approve a separate model asset. After restoring a verified
-bundle under `artifacts/models/max-benign-run5-inet454/` and matching every
-hash in `evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv`, use Workflow 5.
+Frozen model payloads are not redistributed in this release. Evaluation with
+frozen models therefore requires an authorized copy of the exact bundle under
+`artifacts/models/max-benign-run5-inet454/`. Before use, match every file hash
+to `evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv`; the evaluator does
+not substitute or retrain a model. Then use Workflow 5.
 
 Validation before use:
 
@@ -425,7 +430,8 @@ artifacts. The publication-freeze outputs are included under `figures/` with
 their aggregate data and provenance. They do not modify frozen predictions or
 model artifacts.
 
-Figure 5, matched ten-seed ROC summary (moderate):
+Figure 5, matched ten-seed ROC summary (moderate; reads 5,225,664 frozen
+prediction rows):
 
 ```bash
 python scripts/generate_figure5.py \
@@ -438,8 +444,9 @@ python scripts/generate_figure5.py \
 Outputs: curve CSV, AUC mean/SD/95% CI CSV, PNG, SVG, and metadata. Validate
 that all four models and all ten seeds are present and inspect both figures.
 
-Figure 6, author-prespecified representative XGBoost TreeSHAP summary
-(moderate):
+Figure 6, deterministically prespecified representative XGBoost TreeSHAP
+summary (moderate; loads one exact hashed artifact and uses the documented
+bounded evaluation sample):
 
 ```bash
 python scripts/generate_figure6.py \
@@ -465,20 +472,21 @@ margin of this classifier; they are not simulator-realism or fidelity evidence.
 
 ## Workflow 8 — optional Flask demonstration
 
-Unavailable in this candidate. The legacy Flask bundle was optional, did not
-generate run5 evidence, and was excluded after credential/data/model safety
-review. Do not attempt a startup command from this release. A future separate
-demo must pass the controls in `CODE_AUDIT.md` and
-`SECURITY_AND_DUAL_USE.md`, then undergo a localhost-only import/startup smoke
-test without exposing a network service.
+The Flask demonstration is deliberately outside this release's scope. The
+legacy bundle was optional, did not generate run5 evidence, and was excluded
+after credential/data/model safety review; consequently, this release provides
+no Flask startup command. Any separately developed compatible demonstration
+must satisfy `CODE_AUDIT.md` and `SECURITY_AND_DUAL_USE.md`, including a
+localhost-only import/startup smoke test without exposing a network service.
 
 ## Workflow 9 — complete end-to-end reproduction
 
 Run Workflows 1, 2, 3, 5, 6, and 7 in that order, always using new `work/`,
 `artifacts/`, and `results/` output names. Workflow 1's full campaign and
 Workflow 3 are the two principal long-running operations; Workflow 2 is also
-large and disk-intensive. Do not launch them accidentally. Workflow 4 applies
-only when approved frozen assets are obtained, and Workflow 8 is unavailable.
+large and disk-intensive. Do not launch them accidentally. Workflow 4 requires
+an authorized exact frozen-model bundle, and Workflow 8 is outside release
+scope.
 
 ## Tests and release validation
 
@@ -492,13 +500,13 @@ bash -n scripts/*.sh
 python scripts/validate_public_release.py .
 ```
 
-The canonical prior test evidence was 22/22 unit tests and 31/31 preparation
-checks. A warning that no libpcap provider is available is not a failure when
+The publication-ready candidate passed 23/23 unit tests; the frozen preparation
+evidence records 31/31 checks. A warning that no libpcap provider is available is not a failure when
 the synthetic file-based Scapy PCAP tests pass. Live capture is not required.
 
 `scripts/validate_public_release.py` checks forbidden outputs, private paths,
 credentials, file sizes, required components, manifests, and hashes. It does
-not run simulations, preparation, training, predictions, or statistics.
+not execute simulations, preparation, training, predictions, or statistics.
 
 ## Expected canonical counts and hashes
 

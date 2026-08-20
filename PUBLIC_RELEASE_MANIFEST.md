@@ -5,7 +5,7 @@ This is the complete final-candidate inventory for version `1.0.0`.
 ## Summary
 
 - Files recorded: 218.
-- Total recorded bytes: 3,536,441.
+- Total recorded bytes: 3,543,599.
 - Classification counts: canonical=191, documentation=24, utility=3.
 - Largest-file gate: every included file is below 100,000,000 bytes.
 - Repository: <https://github.com/abiramer/OMNeT-DDoS-Cross-Environment-Diagnostic>.
@@ -25,24 +25,24 @@ The SHA-256 of `SHA256SUMS.txt` is recorded externally in the publication-freeze
 |---|---:|---|---|---|---|
 | .gitignore | 268 | 940b23e592c80545eae4cd7084ab74179624f0e8971b56f8c19ab006afa5972c | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | CANONICAL_RESULTS.md | 27958 | cbc422a0f7979c5b324c3effca34ca76ce0eea5b3d759239de7f59c334bb65d7 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
-| CHANGELOG.md | 10950 | 1864e2a6e31e762a8bff42523647241daca35ac9030abc416a6d3e9e09c31614 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| CHANGELOG.md | 11055 | afb25e765afed60a7494c746ef3e72df1c9827e69fd1445933cd29700c526e78 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | CITATION.cff | 1464 | 04d8689158aac8cf1c6c2783bf865a1759bc9d81222ff1b2ccf396c3164094df | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
-| CODE_AUDIT.md | 1347 | 7f91252956c3536728f9c2a81499b4a685e220b47d00902f74978e443c49024c | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
-| COMPONENT_COMPLETENESS.md | 7864 | 8a6688f2185a519822c9e6931eb9ecec9676f1a1e9d67c96af074ccc4b780a32 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
-| EXCLUDED_FILES_SUMMARY.md | 2877 | 47499e216d5f3286e8eefdf1f45ea4eb46f9ddae66e5c01f7d1929d6c4f4306f | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| CODE_AUDIT.md | 1368 | 6ebbff9882ac40086032fd3ff021427caf8f664e17e8c57a820cf2cd6425b333 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| COMPONENT_COMPLETENESS.md | 8212 | d0b59bbe7a30500e53307e1cc260bb3fbfec4725abbcb2d95e2749ed89621333 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| EXCLUDED_FILES_SUMMARY.md | 3152 | e6c43e0bf6aa0211a0701adcafe306cb3f575f6eb4624a37a2e756491de7b7d6 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | LICENSE | 1331 | 3b54517dad0d6938294d54906baa98c7144bd1ebcacd2f70dbfa4f2efb18e464 | documentation | Approved license or third-party notice | author-approved publication metadata |
 | LICENSES/CC-BY-4.0.txt | 18657 | 9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411 | documentation | Approved license or third-party notice | author-approved publication metadata |
 | LICENSES/MIT.txt | 1151 | 3488d5df571b88b9de089c98a65164b92d4bf366dc0d1c1547cb55ea25459c7f | documentation | Approved license or third-party notice | author-approved publication metadata |
-| MODEL_ARTIFACTS_NOT_REDISTRIBUTED.md | 3211 | 0322cde0c074d97354aa191468cff288855c8fd189b6d0659026dc0e1a8b5d98 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
-| PUBLICATION_READY_CHECKLIST.md | 4566 | 20111938eaaab332ccf42aadcbbfea9f2b129c3050eea2718593c57280f22910 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| MODEL_ARTIFACTS_NOT_REDISTRIBUTED.md | 3658 | 2eb15b914fe77aac2c5572f2adb5333d0217c7afc7d30076a2cfe6a590b34cf3 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| PUBLICATION_READY_CHECKLIST.md | 5711 | 4cd159afad1bf3308b7ee24fecb44759307da78c09502ad57e5cc829e99b9f45 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | PUBLIC_DATA_PROVENANCE.md | 7261 | 37d184a5011b8cc36a6037abf2721e03ff55cf13757082c190ebe33a62a1c9dc | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | PUBLIC_RELEASE_MANIFEST.csv | 0 | SELF_REFERENTIAL_NOT_APPLICABLE | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | PUBLIC_RELEASE_MANIFEST.md | 0 | SELF_REFERENTIAL_NOT_APPLICABLE | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
-| README.md | 22795 | 8d6697fc9ef23094c3e54b69fd992570bc1c260651697ca46d609a0b31ef132a | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| README.md | 23565 | f4c2952dbb7c6e1175744e3aa2d3dae2657d1f0b4841e4faa8682856a014d88b | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | SECURITY_AND_DUAL_USE.md | 891 | 7f4326007347c5a894f0229bd6a7304b91aaa276279ce3f6730e6c3abd51309d | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | SHA256SUMS.txt | 0 | SELF_REFERENTIAL_NOT_APPLICABLE | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | THIRD_PARTY_NOTICES.md | 1405 | 0623bf2aa0ee1f21bf4e1250ffe5aa458c196ddc2cd334918af8d80edfc9615f | documentation | Approved license or third-party notice | author-approved publication metadata |
-| VERSIONS.md | 1839 | e9d0b581f982cc0a66097e4b4cb1baaec9db7b902f70a28347da717f4e8ed8bf | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| VERSIONS.md | 2095 | 59309bf1e13a7edd668e2003b80ee59bd246b8c543c8e8a9306b1f1c349bfc44 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | config/README.md | 1168 | 46afead5584d99e93f1a8a04bd6cd317b75c3c9590dbe155b5e370ba3c358edd | canonical | Frozen or portable configuration | existing verified configuration |
 | config/applications.yaml | 1006 | f0eb54d4b82101ae35421672d21be1915eab84b64e5f470a6844063a94948260 | canonical | Frozen or portable configuration | existing verified configuration |
 | config/feature_mapping.yaml | 2475 | 3b6fd858acf30c6119b008f4d083dd4f65c9dc9b7f3f398b0da1d2b298a94a81 | canonical | Frozen or portable configuration | existing verified configuration |
@@ -55,7 +55,7 @@ The SHA-256 of `SHA256SUMS.txt` is recorded externally in the publication-freeze
 | evidence/environment/environment_versions.json | 337 | a181b583fa436b85dbde33e0dccf61d5ead683f9712977466d0e69ec9059d009 | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
 | evidence/environment/pip-freeze-20260819T144816.txt | 930 | 11453ed539a4a2a2193df36c84a95cfbf88b91915e1c601519c6895b77180d13 | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
 | evidence/environment/python-version-20260819T144816.txt | 15 | 18cfab71d754ead7155fdec04deb16b88b572772a120307f2b4f17bea10c7aaa | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
-| evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv | 131439 | ea161105da73b9ec8ced18b794de7e409ad976ca76803aeaac290d1c2fe3cb6e | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
+| evidence/model_inventory/MODEL_ARTIFACT_INVENTORY.csv | 135230 | 7c579417c18ca8f06e80510338d44a331b213f2ea439ba8df935e67725c88095 | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
 | evidence/model_metadata/feature4/hybrid-seed104729.metadata.json | 824 | ee33ca68acd62be0f636a44de817a87f9737fe5f079a351816f3e4ea6e1a3ef6 | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
 | evidence/model_metadata/feature4/hybrid-seed130363.metadata.json | 824 | 15988498cab704c745125a87a1e633d0ae9d15458c74925bd530f00e163b0912 | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
 | evidence/model_metadata/feature4/hybrid-seed155921.metadata.json | 824 | 4b94b9ce4e173a8d0e2f8c725adfd87d631449164f4032cc98526d6dae99f7f4 | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |

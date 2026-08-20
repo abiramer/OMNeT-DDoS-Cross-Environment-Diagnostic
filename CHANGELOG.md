@@ -18,9 +18,10 @@
 - Added public-safe dataset provenance, component/model/Code audits, release
   manifests, portable path examples, licensing gate, citation metadata,
   dual-use guidance, and separate A–F reproduction workflows.
-- Added non-overwriting compatible Figure 5 ROC and Figure 6 all-seed XGBoost
-  TreeSHAP generators. Their future outputs require author review and are not
-  retroactively claimed as canonical evidence.
+- Added non-overwriting compatible Figure 5 ROC and Figure 6 XGBoost TreeSHAP
+  generators. The final publication candidate subsequently used them to create
+  and validate the included figures from frozen inputs: all ten seeds for
+  Figure 5 and the prespecified feature-8 seed-104729 artifact for Figure 6.
 - No simulation, extraction, dataset preparation, training, prediction, or
   statistical-analysis stage was rerun during release assembly.
 

@@ -8,12 +8,12 @@ copied into this public candidate.
 |---|---:|---|
 | compatible utility | 2 | excluded: Flask/database Python contains embedded development credentials |
 | demonstration | 50 | excluded: templates/static assets belong to the unsafe legacy Flask bundle |
-| legacy | 5 | excluded: notebooks and ancillary files contain Colab/local-path or unverified prior-run logic |
+| legacy | 5 | excluded: notebooks and ancillary files contain Colab/local-path or release-unqualified prior-run logic |
 | exclude | 403 | excluded: uploaded CSV rows, prediction history, trained artifacts, and other private/legacy data |
 
 The notebooks contain hardcoded local/Colab paths and are not evidence for
 canonical run5. The Flask application is optional, was not used to generate
-canonical results, depends on obsolete/unverified model files and a development
+canonical results, depends on obsolete or release-unqualified model files and a development
 database, and failed the safe clean-release gate. It has therefore not been
 silently rewritten or represented as canonical.
 

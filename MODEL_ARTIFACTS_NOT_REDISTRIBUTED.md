@@ -20,7 +20,7 @@ and release status. The inventory comprises:
 - environment and aggregate metric files; and
 - the large hold-out prediction and training-metadata payloads.
 
-## Expected layout after separately approved retrieval
+## Expected layout for an authorized local copy
 
 ```text
 artifacts/models/max-benign-run5-inet454/
@@ -38,9 +38,10 @@ artifacts/models/max-benign-run5-inet454/
 ```
 
 Do not commit payloads over GitHub's ordinary per-file limit to repository
-history. If separate future redistribution approval is granted, publish versioned model bundles as
-separate release assets or Zenodo files, record each bundle hash, and verify
-that extracted files match the inventory.
+history. Redistribution is outside this release's approved scope. If the
+authors and institution later authorize separate distribution, use versioned
+release assets or Zenodo files, record each bundle hash, and verify that
+extracted files match the inventory.
 
 ## Regeneration
 
@@ -68,10 +69,16 @@ serialized from a script and refer to `__main__.keras_mlp`; use
 `scripts/evaluate_omnet.py`, which registers the compatible factory before
 loading, or register the exact same callable in an external loader.
 
-Model loading was not smoke-tested from this clean copy because no model
-payload is included and the local canonical `.venv-final` launcher was not
-operational during release assembly. Do not interpret the presence of hashes
-or metadata as the presence of loadable models.
+Frozen model payloads are not redistributed in this release. The included
+Figure 6 was generated and validated from the locally retained frozen
+feature-8 XGBoost artifact trained with seed 104729 (SHA-256:
+`c7bda804520817d02357cdb3c259a531652f3e99355fac4e3b52b0bae178f122`).
+The clean-candidate generation utility loaded that exact artifact under the
+pinned Python 3.10.5 stack and verified its identity, feature order, and seed.
+Independent regeneration requires an authorized copy of that exact artifact;
+the utility does not substitute another model. The remaining excluded payloads
+were not release load-tested, and hashes or metadata do not imply that model
+payloads are present.
 
 Expected aggregate performance is documented in `CANONICAL_RESULTS.md`,
 `evidence/training/seed_metrics.csv`, and

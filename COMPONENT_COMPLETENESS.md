@@ -96,10 +96,14 @@ loading command, and status in
 
 Only small model metadata and aggregate metrics are present in this repository.
 No joblib, Keras weight payload, split-ID row table, training-metadata payload,
-or hold-out prediction table is included. Model-loading smoke tests from the
-clean copy are therefore not applicable, and this package does not state that
-models are included. If approved later, model payloads should be versioned
-separate GitHub release assets or Zenodo files, not Git history.
+or hold-out prediction table is included, and this package does not state that
+models are included. For Figure 6, the clean-candidate utility loaded and
+verified the locally retained feature-8 XGBoost seed-104729 artifact against
+its inventory hash under the pinned Python 3.10.5 stack. Other excluded model
+payloads are outside the release load-test scope. Independent Figure 6
+regeneration requires an authorized copy of the exact hashed artifact. Any
+future separately authorized model distribution should use versioned release
+assets or Zenodo files, not Git history.
 
 SciKeras artifacts reference `__main__.keras_mlp`. The compatibility factory
 is intentionally present in `scripts/evaluate_omnet.py`; external loaders must
@@ -111,7 +115,8 @@ Status: **excluded; safety gate failed**.
 
 The development Flask bundle contains embedded database credentials, uploaded
 user/prediction CSVs, legacy model artifacts, database contents/assumptions,
-and unverified prior-run graphics. It is optional and was not used to generate
+and prior-run graphics without release-qualified provenance. It is optional
+and was not used to generate
 canonical run5 evidence. Because it is not in the clean release, no startup or
 network-service smoke test was performed.
 
@@ -125,7 +130,8 @@ described as a demonstration, not a simulator-fidelity validator.
 
 Status: **complete without redistributing dataset rows**.
 
-`config/paths.example.yaml` provides portable placeholders. Every pipeline
+`config/paths.example.yaml` provides clearly labelled portable example values.
+Every pipeline
 script accepts paths via command-line arguments; readers never edit source to
 set a dataset path. README examples cover Windows drive paths and Unix paths,
 the exact expected directory tree and 18 input CSV filenames, acquisition,
@@ -145,5 +151,5 @@ evaluation, OMNeT++ reevaluation, statistics, Figure 5/6, optional Flask, and
 end-to-end workflows. Each lists prerequisites, inputs, command, runtime class,
 outputs, validation, and canonical counts. The 40-simulation campaign and
 ten-seed training are prominently marked long-running and use new output names.
-The Flask and included-model workflows explicitly stop because those artifacts
-are not in this candidate.
+Frozen-model evaluation requires an authorized exact model bundle; the Flask
+demonstration is a deliberate release-scope exclusion.
