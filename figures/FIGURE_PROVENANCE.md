@@ -1,5 +1,20 @@
 # Publication figure provenance
 
+## Figures 1–4 — author-created manuscript artwork
+
+Figures 1–4 are the exact media objects embedded in the final manuscript. They
+are original author-created diagrams or screenshots and carry no third-party
+attribution. The per-figure `CAPTION.txt` and provenance JSON files preserve the
+exact manuscript caption and identify the originating DOCX media part and
+SHA-256. Figure 4 is an optional Flask demonstration screenshot; it was not
+used to generate canonical run5 results. Visual inspection found no credentials,
+private paths, or confidential user data in these four figures.
+
+- Figure 1: `figure1/figure1_pipeline.jpeg`
+- Figure 2: `figure2/figure2_feature_selection.png`
+- Figure 3: `figure3/figure3_omnet_topology.jpeg`
+- Figure 4: `figure4/figure4_flask_interface.jpeg`
+
 Both figures were generated on 2026-08-20 with the isolated Python 3.10.5
 validation runtime and the package's pinned scientific versions. Neither
 simulation, preparation, extraction, training, prediction, nor statistical

@@ -20,6 +20,7 @@ This checklist records the completed validation state of version 1.0.0.
 | Figure 5 frozen-input provenance and visual inspection | PASS | `figures/figure5/`; all four classifiers and all ten frozen seeds; input hash recorded; approved PNG/SVG show no clipping or overlap. |
 | Figure 6 deterministic selection, artifact verification, and loading | PASS | XGBoost feature 8 seed 104729; inventory-matching SHA-256 `c7bda804520817d02357cdb3c259a531652f3e99355fac4e3b52b0bae178f122`; loaded with the pinned stack. |
 | Figure 6 provenance, interpretation boundary, and visual inspection | PASS | `figures/figure6/figure6_provenance.json`, `figures/FIGURE_PROVENANCE.md`; approved PNG/SVG; no simulator-fidelity claim. |
+| Figures 1–4 manuscript identity and redistribution review | PASS | Exact embedded media from the final manuscript are under `figures/figure1/` through `figures/figure4/`; captions and hashes are recorded; no third-party attribution, credential, private path, or confidential data was found. |
 | Python 3.10.5 validation runtime | PASS | Isolated audit runtime reports Python 3.10.5; pinned requirements installed without changing scientific evidence. |
 | Python compilation | PASS | `scripts`, `src`, and `tests` compiled successfully. |
 | Complete unit-test suite | PASS | 23/23 tests passed; the expected no-libpcap warning did not affect synthetic file-based PCAP tests. |

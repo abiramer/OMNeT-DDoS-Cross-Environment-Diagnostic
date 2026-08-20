@@ -1,0 +1,1 @@
+Fig. 3  OMNeT++ simulation topology: (a) normal traffic scenario with 50 Benign client nodes, access switch, edge router, and target server; (b) DDoS attack scenario with the addition of 20 botnet nodes generating traffic. Benign client nodes and botnet nodes are rendered in distinct colors to facilitate visual distinction.

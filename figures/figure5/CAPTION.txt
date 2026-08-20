@@ -1,0 +1,1 @@
+Fig. 5  Ten-seed ROC summary on the frozen feature-8 CICDDoS2019 hold-out predictions for XGBoost, RF, MLP, and the majority-voting hybrid. Curves show the mean across ten matched seeds; shaded bands show ±1 sample standard deviation of the true-positive rate.

@@ -4,9 +4,9 @@ This is the complete inventory for version `1.0.0`.
 
 ## Summary
 
-- Files recorded: 218.
-- Total recorded bytes: 3,540,941.
-- Classification counts: canonical=191, documentation=24, utility=3.
+- Files recorded: 231.
+- Total recorded bytes: 4,308,370.
+- Classification counts: canonical=204, documentation=24, utility=3.
 - Largest-file gate: every included file is below 100,000,000 bytes.
 - Repository: <https://github.com/abiramer/OMNeT-DDoS-Cross-Environment-Diagnostic>.
 - Archived release: <https://doi.org/10.5281/zenodo.22025873>.
@@ -34,11 +34,11 @@ The SHA-256 of `SHA256SUMS.txt` is recorded externally in the version 1.0.0 vali
 | LICENSES/CC-BY-4.0.txt | 18657 | 9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411 | documentation | Approved license or third-party notice | author-approved publication metadata |
 | LICENSES/MIT.txt | 1151 | 3488d5df571b88b9de089c98a65164b92d4bf366dc0d1c1547cb55ea25459c7f | documentation | Approved license or third-party notice | author-approved publication metadata |
 | MODEL_ARTIFACTS_NOT_REDISTRIBUTED.md | 3519 | d486dbc2feae3405e6def183e36b58235948dfa3e99c74229bf5e22f959e43ce | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
-| PUBLICATION_READY_CHECKLIST.md | 5403 | 13256d66210f9aa74d6dc68ecf75e7061dd5c058bdeddcafaffc80643834fa31 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| PUBLICATION_READY_CHECKLIST.md | 5700 | 332d06c5af60c6faa4410b91f278287f4484d90c709ccba4a30a05fd895756e7 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | PUBLIC_DATA_PROVENANCE.md | 7261 | 37d184a5011b8cc36a6037abf2721e03ff55cf13757082c190ebe33a62a1c9dc | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | PUBLIC_RELEASE_MANIFEST.csv | 0 | SELF_REFERENTIAL_NOT_APPLICABLE | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | PUBLIC_RELEASE_MANIFEST.md | 0 | SELF_REFERENTIAL_NOT_APPLICABLE | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
-| README.md | 23488 | 2475d4eb353003d1dca63d409f48c60abe33aa796dca6e3b9aca462d1d4bc957 | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
+| README.md | 23530 | 72562eea4e456d1dc9e12e3483afa09c0f81327f17c82f54a6b5aba136cebd9e | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | SECURITY_AND_DUAL_USE.md | 891 | 7f4326007347c5a894f0229bd6a7304b91aaa276279ce3f6730e6c3abd51309d | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | SHA256SUMS.txt | 0 | SELF_REFERENTIAL_NOT_APPLICABLE | documentation | Public release documentation/metadata | generated from verified canonical evidence and release audit |
 | THIRD_PARTY_NOTICES.md | 1405 | 0623bf2aa0ee1f21bf4e1250ffe5aa458c196ddc2cd334918af8d80edfc9615f | documentation | Approved license or third-party notice | author-approved publication metadata |
@@ -201,13 +201,26 @@ The SHA-256 of `SHA256SUMS.txt` is recorded externally in the version 1.0.0 vali
 | evidence/training/seed_metrics.csv | 24708 | 73db825a7195dc2ad91f1f34ed9fab0c1caae590e76a96e2fd5b64a24fb924a8 | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
 | evidence/validation/reviewer_validation.json | 1030 | df81b5df489a0d02df62c4e7d0e1b2e9ca3f6af9686f046e5737590bda4c664f | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
 | evidence/validation/reviewer_validation_checks.csv | 2913 | 1f9be2067015e2a64c7ba8b268b6b7d0201993d9ae10df935fe39a23cafb73f8 | canonical | Canonical public-safe aggregate evidence | copied from verified canonical run5 evidence |
-| figures/FIGURE_PROVENANCE.md | 3254 | dce14fb50fc0bbf5f104be3534833e016760e6bce8c7b8462e3e378c368acb8b | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/FIGURE_PROVENANCE.md | 4043 | 028aa973410ad6f4aa5684acc4f9d6a6a971e195bb09a37db6d0d808dce1e782 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure1/CAPTION.txt | 71 | 8c5a566b70a93f03b03d406b8a2321628eb2f5d9b0c176e5894c0f383ebddf0a | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure1/figure1_pipeline.jpeg | 167068 | 6660d999577076f24cbf6c438f4daab421c2b8781513ade3a3f6432b88fec0b8 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure1/figure1_provenance.json | 463 | ddb5701b745f0ab61fbf04c073d583f8a73ff891db14c3373b4c084da15c38e3 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure2/CAPTION.txt | 65 | 0caf07b9cd33b52789a816efd88e2273812d644bbd8d3ec2e46d6a9eb0ef2143 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure2/figure2_feature_selection.png | 110428 | 00f01403bb861c30692948965c263ab79270838be1fb38582ba2426d1b11b136 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure2/figure2_provenance.json | 456 | 51115b546ff463c2da7eb9b7c37a24c6f7ccd1d11b33db30e03e06779dc81cc1 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure3/CAPTION.txt | 326 | 1aea48830e48acedb4d870d741a4e7434f9427cd3fab9dcc38c803ef72521a54 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure3/figure3_omnet_topology.jpeg | 266108 | 668e41b05014c9dd9e37d4ea5909834e2a9788b31e5ad7eea774828111dfbee8 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure3/figure3_provenance.json | 428 | 3245ab8478e9d88eb318e1eecac0d355e1482e1af096c0a92a195268fee8cef0 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure4/CAPTION.txt | 65 | 7e92f41a04484ab16131a28d87ae612f4ba641e525a9a8febe99f96256aa2f38 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure4/figure4_flask_interface.jpeg | 219780 | a6ac360016909f7e75c33be5dbe68cc56b34f03cd4353df10e9ed1d413f7d0cb | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure4/figure4_provenance.json | 500 | 6c85524adcee92066e77426d23ab16241e98dd888f411708e0d3041c2ea8620b | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure5/CAPTION.txt | 262 | 8d5a005d199ec906d8a02845a7d345e73aae7b413caaf9d6b9ff25929dd2b5b9 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
 | figures/figure5/figure5_metadata.json | 839 | 87ab39d4458167553c2ec484cba322055a76407b5b7a572b24b8d7607794f56c | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
 | figures/figure5/figure5_roc_curves.csv | 223095 | 7c44d037ebc4bb5c48f96fa2f1fed5a6b899ddfa896a7d7e36d91778ae94683e | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
 | figures/figure5/figure5_roc_summary.csv | 438 | aa37c42f7c57c8db0acb764fd5bbaaf86e81da439ad511ddb0db001f8adf690f | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
 | figures/figure5/figure5_roc_summary.png | 186917 | 647b99c0e87f3c4847f29d85a879aae73d03ceffffb2a905fbe019fa9f34de88 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
 | figures/figure5/figure5_roc_summary.svg | 158977 | f0fa84b200d17925fea2409bf361d9423d7e6a1b1f0a719c41beb278a893e50b | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
-| figures/figure6/CAPTION.txt | 234 | 5e0784fdcb0449bcaa92ba43b46ebb6f6caae8bc43d0bd82c9df82baafdd2399 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
+| figures/figure6/CAPTION.txt | 314 | 6627f420fe5f1437ecf1aadf36bce2e036e2a22261c63c1fdfe61ac25c5193dd | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
 | figures/figure6/figure6_provenance.json | 2414 | 838ee6a699889401dc360ae28663f82c2d49e65a03439992d8e401abe45c99c1 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
 | figures/figure6/figure6_shap_summary.csv | 281 | d4b31cab0780dd8782b9ca1c35dbe2fc5cc5574d1c15edd0dc54114c3074a942 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
 | figures/figure6/figure6_shap_summary.png | 165270 | 16e13d070f390d9cfce1a25ddec60eb836197a610c91ab4b6c4db3e34ad0c052 | canonical | Approved publication figure, aggregate data, or provenance | generated from frozen canonical run5 inputs on 2026-08-20 |
@@ -233,7 +246,7 @@ The SHA-256 of `SHA256SUMS.txt` is recorded externally in the version 1.0.0 vali
 | scripts/validate_cicddos2019_inventory.py | 8530 | 0b16d0afd5eb5747fb1bbfa72f5ccd5e6cc7ae1d67a8bb3f0c61f569e4aa78b7 | canonical | Reproducibility pipeline source | existing verified project source |
 | scripts/validate_features.py | 5299 | 2bfb2acb2dd0389fa2bcea9d3bba89b1bc1a0dde179223c10f9187810d4cfd82 | canonical | Reproducibility pipeline source | existing verified project source |
 | scripts/validate_prepared_dataset.py | 16890 | f49b65f24eaf0a85b086a5eae33b29913e78ecbe7d2e4138e3b60f8b751ff719 | canonical | Reproducibility pipeline source | existing verified project source |
-| scripts/validate_public_release.py | 9958 | 9d88c0cd221d00064c28d979529bf673de06b52c4b6398b179d74182ff824331 | utility | Compatible public reporting/release utility | version 1.0.0 release utility |
+| scripts/validate_public_release.py | 10159 | cdd2beeedbf08aaae0b47e7a39505ae69b5053af2b59734fe30843ec01592536 | utility | Compatible public reporting/release utility | version 1.0.0 release utility |
 | scripts/validate_reviewer_outputs.py | 16479 | 255b10e9b91d3b2f7e0313cfb5fe82615adf8be63b482f9665375540d9deb798 | canonical | Reproducibility pipeline source | existing verified project source |
 | src/ddosvalidation/package.ned | 24 | 59f24df12fc1056fff55c7a87a9ee37d0a2fcffe59936d0811d9508c2e995e07 | canonical | OMNeT++/INET simulation project source/configuration | existing verified project source |
 | src/ddosvalidation/simulations/DDoSNetwork.ned | 2433 | d7693353467e4b84a1a9ecf3a11a1c9c516c74d92e42df58b9db8238674333c6 | canonical | OMNeT++/INET simulation project source/configuration | existing verified project source |

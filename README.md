@@ -36,8 +36,8 @@ Included:
 - the NED/INI simulation project and frozen configuration;
 - dataset inventory, preparation, training, evaluation, statistics, table, and
   compatible Figure 5/6 generation source;
-- completed and validated Figure 5 and Figure 6 publication outputs with
-  machine-readable provenance;
+- all six author-approved manuscript figures with exact captions and
+  provenance; Figures 5 and 6 are the completed validated canonical outputs;
 - focused tests and configuration validation;
 - model metadata, exact hyperparameters, feature order, package snapshots, and
   hashes of every frozen artifact;

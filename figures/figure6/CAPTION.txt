@@ -1,1 +1,1 @@
-Figure 6. SHAP summary for the frozen canonical feature-8 XGBoost model trained with seed 104729. Seed 104729 was selected as the first seed in the predefined numerically ordered frozen seed list, independently of model performance.
+Fig. 6  SHAP summary for the frozen canonical feature-8 XGBoost model trained with seed 104729. Native XGBoost 2.1.1 TreeSHAP values represent the DDoS-class raw margin for 10,000 deterministically selected hold-out records. The representative seed was selected by a deterministic rule independent of performance.
