@@ -1,0 +1,9 @@
+Feature,Rank,MeanAbsSHAP
+Total Fwd Packets,77,0.0
+Total Backward Packets,78,0.0
+Flow Bytes/s,18,0.12050792574882507
+Flow Packets/s,37,0.02841268852353096
+Flow Duration,21,0.1028301790356636
+Total Length of Fwd Packets,79,0.0
+Total Length of Bwd Packets,76,0.0
+Fwd Packet Length Mean,69,0.0
