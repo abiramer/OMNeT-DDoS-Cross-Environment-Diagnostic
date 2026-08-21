@@ -79,3 +79,24 @@ performance.
 
 Figure 6 explains the selected classifier's predictions only. It does not
 establish simulator realism or fidelity.
+## Figure 7 — Full-feature CICDDoS2019 TreeSHAP importance
+
+**Manuscript figure:** Figure 7
+
+**Figure file:**  
+`figures/figure7/full_feature_shap_top20.png`
+
+**Generation script:**  
+`scripts/full_feature_analysis.py`
+
+**Supporting outputs:**  
+- `evidence/full_feature_importance/full_feature_shap_ranking.csv`
+- `evidence/full_feature_importance/cross_environment_feature_ranks.csv`
+- `evidence/full_feature_importance/full_feature_metrics.json`
+
+**Description:**  
+XGBoost feature-importance analysis performed on the complete eligible
+CICDDoS2019 predictor space. The original source files contained 88 columns.
+After excluding the class label and non-predictive identifier/metadata
+fields, 79 eligible predictors were evaluated. Mean absolute TreeSHAP
+contributions were used to rank predictor importance.
