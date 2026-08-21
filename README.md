@@ -8,7 +8,7 @@ working repository.
 Version 1.0.0
 
 - Source repository: <https://github.com/abiramer/OMNeT-DDoS-Cross-Environment-Diagnostic>
-- Archived release: <https://doi.org/10.5281/zenodo.22025873>
+- release: <https://doi.org/10.5281/zenodo.22025873>
 - Release date: `2026-08-21`
 
 ## Scientific scope and interpretation
@@ -70,6 +70,9 @@ evidence/model_inventory/       hashes/status for every frozen model-directory a
 evidence/omnet/                 aggregate run/scenario metrics and agreement; no flow predictions
 evidence/statistics/            aggregate summaries, paired tests, McNemar, tables
 evidence/validation/            public-safe validation reports and hashes
+evidence/full_feature_importance/    Full-space TreeSHAP rankings and metrics
+
+figures/figure7/                    Full-feature TreeSHAP manuscript figure
 ```
 
 No custom `.cc`, `.h`, or `.msg` module exists in the implemented project, and
@@ -421,7 +424,7 @@ tested. Undefined metrics remain `not estimable`. Only displayed endpoints for
 metrics naturally bounded to [0,1] are constrained to [0,1]; seed values,
 means, SDs, raw t endpoints, unbounded statistics, and tests are unchanged.
 
-## Workflow 7 — Figure 5 and Figure 6
+## Workflow 7 — Figure 5 and Figure 6 and Figure 7
 
 These compatible utilities create **new**, non-overwriting outputs from frozen
 artifacts. The validated version 1.0.0 outputs are included under `figures/` with
@@ -467,6 +470,31 @@ uses 10,000 frozen hold-out rows selected without replacement by deterministic
 SHA-256 rank, and uses XGBoost 2.1.1 native tree-path-dependent TreeSHAP (no
 external background sample). The contributions explain the DDoS-class raw
 margin of this classifier; they are not simulator-realism or fidelity evidence.
+
+### Figure 7 — Full-feature CICDDoS2019 TreeSHAP analysis
+
+To evaluate the cross-environment feature reduction against the unrestricted
+CICDDoS2019 benchmark representation, an auxiliary XGBoost analysis was
+performed using 79 eligible predictors derived from the original 88 source
+columns after excluding the class label and non-predictive identifier/metadata
+fields.
+
+Feature importance was quantified using mean absolute native TreeSHAP
+contribution.
+
+The manuscript Figure 7 is available at:
+
+`figures/figure7/full_feature_shap_top20.png`
+
+Complete numerical outputs are available at:
+
+- `evidence/full_feature_importance/full_feature_shap_ranking.csv`
+- `evidence/full_feature_importance/cross_environment_feature_ranks.csv`
+- `evidence/full_feature_importance/full_feature_metrics.json`
+
+Generation script:
+
+`python scripts/full_feature_analysis.py`
 
 ## Workflow 8 — optional Flask demonstration
 
