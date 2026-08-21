@@ -9,7 +9,7 @@ Version 1.0.0
 
 - Source repository: <https://github.com/abiramer/OMNeT-DDoS-Cross-Environment-Diagnostic>
 - Archived release: <https://doi.org/10.5281/zenodo.22025873>
-- Release date: `2026-08-20`
+- Release date: `2026-08-21`
 
 ## Scientific scope and interpretation
 
