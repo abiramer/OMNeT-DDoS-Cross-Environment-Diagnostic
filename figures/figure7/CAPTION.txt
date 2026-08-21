@@ -1,0 +1,5 @@
+Top 20 predictors in the full-feature CICDDoS2019
+benchmark analysis ranked by mean absolute TreeSHAP contribution.
+The analysis considered 79 eligible predictors after excluding the
+class label and non-predictive identifier and metadata fields from
+the original 88-column representation.
